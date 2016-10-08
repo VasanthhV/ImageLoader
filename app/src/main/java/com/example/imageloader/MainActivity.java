@@ -77,7 +77,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                         @Override
                         public void onClick(View v) {
                             ImageProcessor img1=new ImageProcessor();
-                         Bitmap b1=img1.applyGaussianBlur(bitmapp);
+                         Bitmap b1=img1.doInvert(bitmapp);
                             Log.i("b1", String.valueOf(b1));
                             imageViewLoad.setImageBitmap(b1);
                         }
